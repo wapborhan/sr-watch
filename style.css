@@ -82,3 +82,32 @@ body {
   box-shadow: 0 0 20px var(--clr), 0 0 40px var(--clr), 0 0 60px var(--clr),
     0 0 80px var(--clr);
 }
+
+.timeBx {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  gap: 15px;
+  font-size: 1.5em;
+  font-family: consolas;
+  font-weight: bold;
+}
+.timeBx #hours::after,
+.timeBx #minutes::after {
+  content: ":";
+  position: absolute;
+}
+.timeBx div {
+  color: var(--c);
+  text-shadow: 0 0 10px var(--c), 0 0 20px var(--c);
+}
+.ap {
+  position: absolute;
+  transform: translateY(-15px);
+  font-size: 0.5rem;
+  right: 65px;
+}
